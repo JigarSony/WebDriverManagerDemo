@@ -10,6 +10,7 @@ public class WDMMain {
 	public static void main(String[] args) {
 		
 		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().version("2.45").setup();
 		
 		WebDriver driver = new ChromeDriver();
 		
