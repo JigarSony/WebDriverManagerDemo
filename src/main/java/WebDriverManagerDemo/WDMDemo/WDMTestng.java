@@ -15,6 +15,7 @@ public class WDMTestng {
 	@BeforeTest
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().version("2.45").setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 	}
