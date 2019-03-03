@@ -1,18 +1,16 @@
 package WebDriverManagerDemo.WDMDemo;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WDMMain {
+public class WDMMain_FF {
 
 	public static void main(String[] args) {
 		
-		WebDriverManager.chromedriver().setup();
-		//WebDriverManager.chromedriver().version("2.45").setup();
+		WebDriverManager.firefoxdriver().setup();
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("https://www.google.com");
 		
@@ -22,3 +20,4 @@ public class WDMMain {
 	}
 
 }
+
